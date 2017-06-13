@@ -1,0 +1,91 @@
+@import "varibles";
+
+.faq-container {
+  width: 1050px;
+  background-color: @bodyBackground;
+  box-shadow: 0 0 1em @gray9;
+}
+
+.focus-input {
+  box-shadow: 0 0 1em @inputFocusColor;
+}
+
+.left-container {
+  width: 35%;
+  text-align: center;
+  border-right: 1px solid @grayc;
+  padding: 95px 0;
+  p {
+    font-size: 13px;
+    color: @buttonColor;
+  }
+}
+
+.right-container {
+  width: 65%;
+  padding: 25px;
+}
+
+.input-container {
+  width: 100%;
+  background: white;
+  height: 2rem;
+  border-radius: 25px;
+  border: 1px solid @grayc;
+  input {
+    border: none;
+    height: 100%;
+    width: 90%;
+    padding: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  .fa-search {
+    color: @inputSearchIcon;
+    margin: 0 10px;
+  }
+}
+
+.faq-item {
+  height: 100px;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  padding: 1.5rem;
+  &:hover {
+    background-color: @selectedFaqColor;
+    border: 1px solid @grayc;
+    border-radius: 5px;
+  }
+  .fa, label {
+    color: @iconColor;
+    display: block;
+  }
+  .fa {
+    font-size: 25px;
+  }
+  label {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+}
+
+.faqItems-container {
+  margin-top: 25px;
+}
+
+.prefer-email-text {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: @HeaderTextColor;
+}
+
+.email-button {
+  padding: 7px 12px;
+  color: @buttonColor;
+  margin-bottom: 5px;
+  .fa {
+    margin-right: 5px;
+  }
+}

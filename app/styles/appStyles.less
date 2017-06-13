@@ -1,0 +1,103 @@
+@import "varibles";
+
+//Helper classes
+
+.lfloat {
+  float: left
+}
+
+.inl-block {
+  display: inline-block;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.rfloat {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+  overflow: hidden;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+// App Styles
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+  color: @inputSearchIcon;
+  font-size: 13px;
+}
+
+#content {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  div, input, textarea {
+    box-sizing: border-box;
+  }
+}
+
+// header styles
+
+.header-container {
+  height: 32px;
+  svg {
+    height: 100%;
+    width: 100%;
+    fill: @headerBackgroundColor;
+  }
+}
+
+.tab-item {
+  position: absolute;
+  font-size: 13px;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  color: @headerTabIconColor;
+}
+
+.icon-container {
+  width: 130px;
+  margin-left: -20px;
+}
+
+.tab-icon {
+  position: relative;
+  .fa {
+    position: absolute;
+    top: 11px;
+    font-size: 12px;
+    left: 12px;
+    color: @headerTabIconColor;
+  }
+}
+
+.active-icon {
+  z-index: 10;
+  svg {
+    fill: @bodyBackground;
+  }
+}
+
+.icon-close {
+  background-color: @HeaderTextColor;
+  color: white;
+  width: 40px;
+  height: 100%;
+  margin-left: -24px;
+  .fa {
+    margin: 7px 22px;
+  }
+}
+

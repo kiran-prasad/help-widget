@@ -1,0 +1,67 @@
+@import "varibles";
+
+.mail-container {
+  width: 600px;
+  padding: 35px 30px;
+  background-color: @bodyBackground;
+  box-shadow: 0 0 1em @gray9;
+  transition: width 2s;
+}
+
+.mail-form-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid @grayc;
+}
+
+.email-id {
+  background-color: @headerBackgroundColor;
+  font-size: 13px;
+  padding: 8px;
+  color: @HeaderTextColor;
+}
+
+.subject:focus, textarea:focus {
+  box-shadow: 0 0 1em @inputFocusColor;
+  outline: 0;
+  border: 0;
+}
+
+.message {
+  height: 100px;
+}
+
+.send-mail-btn {
+  float: right;
+  padding: 8px 15px;
+  background-color: @inputFocusColor;
+  color: white;
+  border-radius: 3px;
+  border: 0;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.attach-file-cont {
+  font-size: 13px;
+  color: @inputFocusColor;
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.success-text {
+  font-size: 13px;
+  padding: 10px;
+  background-color: @successBackground;
+  opacity: 0.7;
+  border-radius: 3px;
+  color: @successTextColor;
+
+  .fa {
+    margin-right: 5px;
+  }
+}
